@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SessionUserComponent } from './components/session-user/session-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginComponent } from './components/login/login.component';
     HeaderComponent,
     FooterComponent,
     SessionUserComponent,
-    LoginComponent
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
