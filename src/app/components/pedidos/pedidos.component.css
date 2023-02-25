@@ -1,0 +1,9 @@
+.table-ws{
+  margin-top: 10px;
+  padding: 0 15%;
+}
+@media (max-width: 840px) {
+  .table-ws {
+    padding: 0
+  }
+}

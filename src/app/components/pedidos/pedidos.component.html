@@ -1,0 +1,21 @@
+<div class="table-ws" >
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col" style="width:50px">#</th>
+      <th scope="col" style="">Disciplina</th>
+      <th scope="col" style="width:190px">Sitação</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of disciplina; let i = index;">
+      <td>{{ i + 1}}</td>
+      <td>{{ e.disciplina }}</td>
+      <td>
+        <button *ngIf="e.liberado" type="submit" class="btn btn-success btn-block">Fazer Simulado</button>
+        <button *ngIf="!e.liberado" class="btn btn-danger btn-block" style="cursor: auto">Aguardando ...</button>
+      </td>
+    </tr>
+    </tbody>
+  </table><br>
+</div>
